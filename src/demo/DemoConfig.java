@@ -9,8 +9,8 @@ public class DemoConfig extends JFinalConfig {
 	}
 
 	public void configRoute(Routes me) {
-		me.add("/", HelloController.class);//最好设定有建根路径
 		me.add("/hello", HelloController.class);//访问地址要注意不要漏掉端口号或者填错端口号，jetty和tomcat有一个好像可以不写端口号
+		me.add("/", HelloController.class);//最好设定有建根路径
 	}
 
 	public void configPlugin(Plugins me) {
